@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AuthController {
 
+    /*
     @Autowired
-    private LoginServic<String> loginService;
+    private LoginService<String> loginService;
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@Valid @RequestBody User user) {
@@ -25,5 +26,5 @@ public class AuthController {
         return loginService.refreshToken(refreshToken);
     }
 
-
+*/
 }
