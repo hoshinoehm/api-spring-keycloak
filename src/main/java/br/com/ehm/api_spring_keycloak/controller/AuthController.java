@@ -1,5 +1,7 @@
 package br.com.ehm.api_spring_keycloak.controller;
 
+import br.com.ehm.api_spring_keycloak.model.User;
+import br.com.ehm.api_spring_keycloak.service.LoginService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AuthController {
 
-    /*
     @Autowired
     private LoginService<String> loginService;
 
@@ -25,6 +26,4 @@ public class AuthController {
     public ResponseEntity<?> refresh(@RequestParam("refresh_token") String refreshToken){
         return loginService.refreshToken(refreshToken);
     }
-
-*/
 }
